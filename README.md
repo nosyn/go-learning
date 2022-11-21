@@ -6,7 +6,7 @@
 
 - https://dave.cheney.net/2014/12/01/five-suggestions-for-setting-up-a-go-project
 - https://github.com/golang/go/wiki/TableDrivenTests
-- https://go.dev/ref/spec#Interfac e_types
+- https://go.dev/ref/spec#Interface_types
 - https://en.wikipedia.org/wiki/Parametric_polymorphism
 - https://dave.cheney.net/2016/04/27/dont-just-check-errors-handle-them-gracefully
 - https://dave.cheney.net/2017/04/30/if-a-map-isnt-a-reference-variable-what-is-it
