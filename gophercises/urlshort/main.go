@@ -12,7 +12,7 @@ func main() {
 
 	// Build the MapHandler using the mux as the fallback
 	pathsToUrls := map[string]string{
-		"/urlshort-godoc": "https://godoc.org/github.com/biem97/go-learning/gophercises/urlshort",
+		"/urlshort-godoc": "https://godoc.org/github.com/gophercises/urlshort",
 		"/yaml-godoc":     "https://godoc.org/gopkg.in/yaml.v2",
 	}
 	mapHandler := handlers.MapHandler(pathsToUrls, mux)
@@ -21,8 +21,9 @@ func main() {
 	// fallback
 	yaml := `
 - path: /urlshort
-  url: https://github.com/biem97/go-learning/gophercises/urlshort
+  url: https://github.com/biem97/go-learning/tree/main/gophercises/urlshort
 `
+
 	yamlHandler, err := handlers.YAMLHandler([]byte(yaml), mapHandler)
 	if err != nil {
 		panic(err)
